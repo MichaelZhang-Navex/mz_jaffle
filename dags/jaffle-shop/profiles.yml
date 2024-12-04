@@ -1,0 +1,12 @@
+jaffle_shop:
+  target: qa
+  outputs:
+    qa:
+      type: duckdb
+      path: md:jaffleshop_db
+      schema: jaffleshop_sc
+      threads: 1
+      keepalives_idle: 0
+    dev:
+      type: duckdb
+      path: ./database.duckdb
